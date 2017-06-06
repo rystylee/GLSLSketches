@@ -30,7 +30,7 @@ void main(){
     
     vec3 color = vec3(abs(sin(u_time-st.x)));
     vec2 grid = tile(st,8.);
-    color = mix(color, vec3(abs(sin(u_time+st.x))), circlePattern(grid,abs(sin(u_time)))),
+    color = mix(color, vec3(abs(sin(u_time+st.x))), circlePattern(grid,abs(sin(u_time))));
     
     outputColor = vec4(color,1.0);
 }
